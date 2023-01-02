@@ -72,7 +72,7 @@ public class Bot extends TelegramLongPollingBot {
                 sendMessage(id, stringBuilder.toString());
             }
             case "prossimavolta" -> {
-                DateTime prossimaVolta = new DateTime(2023, 1, 14, 14, 0);
+                DateTime prossimaVolta = new DateTime(2023, 1, 7, 14, 0);
                 Interval interval = new Interval(DateTime.now(), prossimaVolta);
                 Duration duration = interval.toDuration();
                 String stringBuilder = "Alla prossima volta che ci vedremo mancano\n" +
